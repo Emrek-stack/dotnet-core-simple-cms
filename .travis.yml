@@ -3,7 +3,7 @@ dist: trusty
 mono: none 
 dotnet: 2.0.0
 script:
- - npm install -g webpack      
+ - npm install -g webpack
 # - cd Applications/Pantokrator.UI.Items/
  - dotnet restore SimpleCmsCore.sln && dotnet build SimpleCmsCore.sln
 # - cd wwwroot/react-app/
