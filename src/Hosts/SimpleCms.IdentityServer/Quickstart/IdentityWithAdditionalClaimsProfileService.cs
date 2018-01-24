@@ -1,14 +1,15 @@
-﻿using BlogCore.AccessControlContext.Domain;
+﻿using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
 using IdentityModel;
+using IdentityServer4;
 using IdentityServer4.Extensions;
 using IdentityServer4.Models;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Identity;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+using SimpleCms.AccessControlContext.Core.Domain;
 
-namespace IdentityServer4.Quickstart.UI
+namespace SimpleCms.IdentityServer.Quickstart
 {
     public class IdentityWithAdditionalClaimsProfileService : IProfileService
     {

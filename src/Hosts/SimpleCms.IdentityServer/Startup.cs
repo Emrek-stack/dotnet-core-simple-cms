@@ -1,5 +1,5 @@
-﻿using BlogCore.AccessControlContext.Domain;
-using BlogCore.AccessControlContext.Infrastructure;
+﻿using System;
+using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -8,10 +8,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Net.Http.Headers;
-using System;
-using System.Reflection;
+using SimpleCms.AccessControlContext.Core.Domain;
+using SimpleCms.AccessControlContext.Infrastructure;
+using IdentityWithAdditionalClaimsProfileService = SimpleCms.IdentityServer.Quickstart.IdentityWithAdditionalClaimsProfileService;
 
-namespace IdentityServer4.Quickstart.UI
+namespace SimpleCms.IdentityServer
 {
     public class Startup
     {

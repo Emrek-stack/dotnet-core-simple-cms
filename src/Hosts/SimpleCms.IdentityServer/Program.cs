@@ -1,10 +1,10 @@
 ﻿using System;
+using System.IO;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
-using System.IO;
 
-namespace IdentityServer4.Quickstart.UI
+namespace SimpleCms.IdentityServer
 {
     public class Program
     {
