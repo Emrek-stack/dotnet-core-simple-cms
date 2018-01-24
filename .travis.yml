@@ -1,0 +1,17 @@
+language: csharp
+dist: trusty
+mono: none 
+dotnet: 2.0.0
+script:
+# - cd Applications/Pantokrator.UI.Items/
+ - dotnet restore SimpleCmsCore.sln && dotnet build SimpleCmsCore.sln
+# - cd wwwroot/react-app/
+# - npm i -g npm to update 
+# - npm install && npm run build
+
+#  env:
+#   global:
+#     - "FTP_USER=user"
+#     - "FTP_PASSWORD=password"
+# after_success:
+#     "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://sitename.com/directory/myfile"
