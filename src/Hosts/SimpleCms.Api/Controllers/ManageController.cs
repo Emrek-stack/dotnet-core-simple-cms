@@ -1,18 +1,18 @@
-﻿using SimpleCms.AccessControlContext.Core.Domain;
-using IdentityServerWithAspNetIdentity.Models.ManageViewModels;
-using IdentityServerWithAspNetIdentity.Services;
+﻿using System;
+using System.Linq;
+using System.Text;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Linq;
-using System.Text;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
+using SimpleCms.AccessControlContext.Core.Domain;
+using SimpleCms.Api.Models.ManageViewModels;
+using SimpleCms.Api.Services;
 
-namespace IdentityServerWithAspNetIdentity.Controllers
+namespace SimpleCms.Api.Controllers
 {
     [Authorize]
     [ApiExplorerSettings(IgnoreApi = true)]

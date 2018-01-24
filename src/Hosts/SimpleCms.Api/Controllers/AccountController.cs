@@ -1,20 +1,21 @@
-﻿using SimpleCms.AccessControlContext.Core.Domain;
-using IdentityServer4.Quickstart.UI;
+﻿using System;
+using System.Security.Claims;
+using System.Threading.Tasks;
 using IdentityServer4.Services;
 using IdentityServer4.Stores;
-using IdentityServerWithAspNetIdentity.Models.AccountViewModels;
-using IdentityServerWithAspNetIdentity.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Security.Claims;
-using System.Threading.Tasks;
+using SimpleCms.AccessControlContext.Core.Domain;
+using SimpleCms.Api.Extensions;
+using SimpleCms.Api.Models.AccountViewModels;
+using SimpleCms.Api.Quickstart.Account;
+using SimpleCms.Api.Services;
 
-namespace IdentityServerWithAspNetIdentity.Controllers
+namespace SimpleCms.Api.Controllers
 {
     [Authorize]
     [ApiExplorerSettings(IgnoreApi = true)]

@@ -1,4 +1,4 @@
-﻿@using IdentityServerWithAspNetIdentity.Views.Manage
+﻿@using SimpleCms.Api.Views.Manage
 @inject SignInManager<SimpleCms.AccessControlContext.Core.Domain.AppUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
