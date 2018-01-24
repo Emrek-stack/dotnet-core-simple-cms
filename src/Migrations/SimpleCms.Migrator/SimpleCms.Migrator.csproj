@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
+    <PackageReference Include="IdentityServer4" Version="2.1.1" />
+    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="2.1.0" />
+    <PackageReference Include="IdentityServer4.EntityFramework" Version="2.1.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Modules\AccessControlContext\SimpleCms.AccessControlContext\SimpleCms.AccessControlContext.csproj" />
+    <ProjectReference Include="..\..\Modules\BlogContext\SimpleCms.BlogContext\SimpleCms.BlogContext.csproj" />
+    <ProjectReference Include="..\..\Modules\PostContext\SimpleCms.PostContext\SimpleCms.PostContext.csproj" />
+    <ProjectReference Include="..\SimpleCms.AccessControlContext.Migrator\SimpleCms.AccessControlContext.Migrator.csproj" />
+    <ProjectReference Include="..\SimpleCms.BlogContext.Migrator\SimpleCms.BlogContext.Migrator.csproj" />
+    <ProjectReference Include="..\SimpleCms.PostContext.Migrator\SimpleCms.PostContext.Migrator.csproj" />
+  </ItemGroup>
+
+</Project>

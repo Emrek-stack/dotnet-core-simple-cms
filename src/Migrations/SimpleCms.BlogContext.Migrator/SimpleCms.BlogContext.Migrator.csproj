@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Modules\BlogContext\SimpleCms.BlogContext.Core\SimpleCms.BlogContext.Core.csproj" />
+    <ProjectReference Include="..\..\Modules\BlogContext\SimpleCms.BlogContext\SimpleCms.BlogContext.csproj" />
+  </ItemGroup>
+
+
+
+</Project>
