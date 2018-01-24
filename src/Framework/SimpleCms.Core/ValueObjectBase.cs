@@ -19,7 +19,7 @@ namespace SimpleCms.Core
 
         public override int GetHashCode()
         {
-            return HashCodeExtensions.CombineHashCodes(GetEqualityComponents());
+            return GetEqualityComponents().CombineHashCodes();
         }
     }
 }

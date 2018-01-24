@@ -23,7 +23,7 @@ namespace SimpleCms.Infrastructure.EfCore
                 criterion.SetPageSize(criterion.DefaultPagingOption.PageSize);
             }
 
-            var queryable = repo.DbContext.Set<TEntity>().AsNoTracking() as IQueryable<TEntity>;
+            var queryable = repo.DbContext.Set<TEntity>().AsNoTracking();
             var totalRecord = queryable.Count();
             var totalPages = (int)Math.Ceiling((double)totalRecord / criterion.PageSize);
 
