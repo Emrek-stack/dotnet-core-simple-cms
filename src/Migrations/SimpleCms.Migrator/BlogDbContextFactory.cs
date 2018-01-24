@@ -1,10 +1,10 @@
-﻿using SimpleCms.BlogContext.Infrastructure;
-using SimpleCms.Infrastructure.EfCore;
+﻿using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using System.Reflection;
+using SimpleCms.BlogContext.Infrastructure;
+using SimpleCms.Infrastructure.EfCore;
 
-namespace SimpleCms.BlogContext.Migrator
+namespace SimpleCms.Migrator
 {
     public class BlogDbContextFactory : IDesignTimeDbContextFactory<BlogDbContext>
     {

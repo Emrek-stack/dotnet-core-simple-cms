@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Reactive.Linq;
 using System.Threading.Tasks;
 
 namespace SimpleCms.Infrastructure.EfCore
@@ -23,7 +22,7 @@ namespace SimpleCms.Infrastructure.EfCore
 
         public virtual async Task<TEntity> GetByIdAsync(Guid id, params Expression<Func<TEntity, object>>[] includeProperties)
         {
-            var queryable = DbContext.Set<TEntity>().AsNoTracking() as IQueryable<TEntity>;
+            var queryable = DbContext.Set<TEntity>().AsNoTracking();
 
             if (includeProperties != null)
             {
@@ -38,7 +37,7 @@ namespace SimpleCms.Infrastructure.EfCore
 
         public async Task<IReadOnlyList<TEntity>> ListAsync(params Expression<Func<TEntity, object>>[] includeProperties)
         {
-            var queryable = DbContext.Set<TEntity>().AsNoTracking() as IQueryable<TEntity>;
+            var queryable = DbContext.Set<TEntity>().AsNoTracking();
 
             if (includeProperties != null)
             {

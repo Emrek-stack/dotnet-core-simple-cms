@@ -65,6 +65,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCms.PostContext", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCms.PostContext.Core", "src\Modules\PostContext\SimpleCms.PostContext.Core\SimpleCms.PostContext.Core.csproj", "{0612CD5B-F336-43BD-A23C-B5F24B7D2866}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCms.IdentityServer", "src\Hosts\SimpleCms.IdentityServer\SimpleCms.IdentityServer.csproj", "{38C0251F-23F9-42CB-ACF1-9DA6A9FEB4DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{0612CD5B-F336-43BD-A23C-B5F24B7D2866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0612CD5B-F336-43BD-A23C-B5F24B7D2866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0612CD5B-F336-43BD-A23C-B5F24B7D2866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C0251F-23F9-42CB-ACF1-9DA6A9FEB4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C0251F-23F9-42CB-ACF1-9DA6A9FEB4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C0251F-23F9-42CB-ACF1-9DA6A9FEB4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C0251F-23F9-42CB-ACF1-9DA6A9FEB4DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -159,6 +165,7 @@ Global
 		{67CA976F-B616-4FB9-B17A-086EA205A0D8} = {EBB6689B-BDDD-4404-ADCA-599256DF75C6}
 		{4138AC85-BC1F-4B48-A377-EC76332C9861} = {378B2FD6-ACB3-4E70-A4A4-5322171A4F5D}
 		{0612CD5B-F336-43BD-A23C-B5F24B7D2866} = {378B2FD6-ACB3-4E70-A4A4-5322171A4F5D}
+		{38C0251F-23F9-42CB-ACF1-9DA6A9FEB4DF} = {0E593F42-52D6-444D-ABBA-445A3AB2ACDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E58AA11F-C019-4C7A-93A4-90A50837B764}
