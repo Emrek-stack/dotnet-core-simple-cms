@@ -12,7 +12,6 @@ using SimpleCms.PostContext;
 using FluentValidation.AspNetCore;
 using IdentityServer4.AccessTokenValidation;
 using IdentityServer4.Models;
-using IdentityServerWithAspNetIdentity.Services;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -35,6 +34,7 @@ using System.Reflection;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using SimpleCms.Api.Services;
 
 #endregion
 

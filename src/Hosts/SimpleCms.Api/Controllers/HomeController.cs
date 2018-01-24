@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using IdentityServerWithAspNetIdentity.Models;
+﻿using System.Threading.Tasks;
 using IdentityServer4.Services;
-using IdentityServer4.Quickstart.UI;
+using Microsoft.AspNetCore.Mvc;
+using SimpleCms.Api.Quickstart.Home;
 
-namespace IdentityServerWithAspNetIdentity.Controllers
+namespace SimpleCms.Api.Controllers
 {
     public class HomeController : Controller
     {
