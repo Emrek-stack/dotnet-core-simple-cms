@@ -42,8 +42,8 @@
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
     <Exec Command="npm install" />
     <Exec Command="npm install -g webpack" />
-    <Exec Command="webpack.js --config webpack.config.vendor.js --env.prod" />
-    <Exec Command="webpack/bin/webpack.js --env.prod" />
+    <Exec Command="webpack --config webpack.config.vendor.js --env.prod" />
+    <Exec Command="webpack --env.prod" />
 
     <!-- Include the newly-built files in the publish output -->
     <ItemGroup>
