@@ -1,7 +1,12 @@
 {
-  "name": "blogcore-app",
+  "name": "simplecms-app",
   "private": true,
   "version": "0.0.1",
+  "scripts": {
+    "build-vendor": "webpack --config webpack.config.vendor.js --env.prod",
+    "build": "webpack --env.prod"
+
+  },
   "dependencies": {
     "@types/axios": "^0.14.0",
     "@types/classnames": "^2.2.3",

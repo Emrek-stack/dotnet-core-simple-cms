@@ -8,6 +8,8 @@ script:
  - dotnet restore SimpleCmsCore.sln
  - cd src/Hosts/SimpleCms.App/
  - npm install
+ - npm run build-vendor
+ - npm run build
  - dotnet run build
 # - cd wwwroot/react-app/
 
